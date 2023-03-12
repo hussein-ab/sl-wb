@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e86244d-3a65-4ebe-a2fb-4f5fa2f94a9f" name="Changes" comment="simple hello world api">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="7e86244d-3a65-4ebe-a2fb-4f5fa2f94a9f" name="Changes" comment="containerize application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -33,14 +32,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.RunnerTest">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sample.Runner" />
       <module name="sl-wb" />
@@ -54,9 +53,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sl-wb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sample" />
+      <option name="MAIN_CLASS_NAME" value="org.sample.RunnerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunnerTest.testApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sl-wb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sample" />
+      <option name="MAIN_CLASS_NAME" value="org.sample.RunnerTest" />
+      <option name="METHOD_NAME" value="testApi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunnerTest.testAppApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sl-wb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sample" />
+      <option name="MAIN_CLASS_NAME" value="org.sample.RunnerTest" />
+      <option name="METHOD_NAME" value="testAppApi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RunnerTest" />
+        <item itemvalue="JUnit.RunnerTest.testApi" />
         <item itemvalue="Application.Runner" />
+        <item itemvalue="JUnit.RunnerTest.testAppApi" />
       </list>
     </recent_temporary>
   </component>
@@ -76,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678393813247</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="containerize application">
+      <created>1678486714712</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678486714712</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +148,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simple hello world api" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple hello world api" />
+    <MESSAGE value="containerize application" />
+    <option name="LAST_COMMIT_MESSAGE" value="containerize application" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/testcontainers/testcontainers/1.17.6/testcontainers-1.17.6.jar!/org/testcontainers/lifecycle/Startable.class</url>
+          <line>17</line>
+          <properties class="org.testcontainers.lifecycle.Startable" method="stop">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
