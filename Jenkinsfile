@@ -27,14 +27,19 @@ pipeline {
 //     }
 
        stage('Push image') {
-          withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
-            sh 'docker tag  docker.io/library/sl-wb:1.0-SNAPSHOT docker01120/sl-wb:latest'
-            sh 'docker push docker01120/sl-wb:latest'
-//         dockerImage.push()
-          }
+         steps {
+            withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
+              sh 'docker tag  docker.io/library/sl-wb:1.0-SNAPSHOT docker01120/sl-wb:latest'
+              sh 'docker push docker01120/sl-wb:latest'
+//           dockerImage.push()
+            }
+         }
+
        }
        stage('run container') {
+          steps {
             sh 'docker run -d --name slwb_app -p 8000:8000 docker01120/sl-wb:latest'
+          }
        }
 
     }
