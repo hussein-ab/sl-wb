@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e86244d-3a65-4ebe-a2fb-4f5fa2f94a9f" name="Changes" comment="update Jenkinsfile">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sample/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sample/RunnerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="7e86244d-3a65-4ebe-a2fb-4f5fa2f94a9f" name="Changes" comment="update Jenkinsfile" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678748993339</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="tests update">
+      <created>1678749822629</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678749822629</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update Jenkinsfile">
+      <created>1678751271880</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678751271880</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +213,7 @@
     <MESSAGE value="rename jenkinsfile -&gt; Jenkinsfile" />
     <MESSAGE value="update jenkins pipeline" />
     <MESSAGE value="provide mvnw with exec permission" />
+    <MESSAGE value="tests update" />
     <MESSAGE value="update Jenkinsfile" />
     <option name="LAST_COMMIT_MESSAGE" value="update Jenkinsfile" />
   </component>

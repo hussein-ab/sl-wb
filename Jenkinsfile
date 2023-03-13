@@ -38,9 +38,7 @@ pipeline {
        }
        stage('run container') {
           steps {
-            withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
               sh 'docker run -d --name slwb_app -p 8000:8000 docker01120/sl-wb:latest'
-            }
           }
        }
 
