@@ -6,11 +6,7 @@ pipeline {
           sh './mvnw --version'
          }
        }
-       stage('run test') {
-          steps {
-            sh './mvnw test'
-          }
-       }
+
        stage('Maven clean package') {
             steps {
                 sh './mvnw clean package'
@@ -25,7 +21,11 @@ pipeline {
 //     stage('Build image') {
 //        dockerImage = docker.build("docker01120/sl-wb:latest")
 //     }
-
+       stage('run test') {
+          steps {
+            sh './mvnw test'
+          }
+       }
        stage('Push image') {
          steps {
             withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
