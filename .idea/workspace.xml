@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e86244d-3a65-4ebe-a2fb-4f5fa2f94a9f" name="Changes" comment="provide mvnw with exec permission">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7e86244d-3a65-4ebe-a2fb-4f5fa2f94a9f" name="Changes" comment="update Jenkinsfile">
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678748344006</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update Jenkinsfile">
+      <created>1678748784975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678748784975</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,9 +193,9 @@
     <MESSAGE value="added pipeline file&#10;added tests&#10;added maven wrapper" />
     <MESSAGE value="rename jenkinsfile -&gt; Jenkinsfile" />
     <MESSAGE value="update jenkins pipeline" />
-    <MESSAGE value="update Jenkinsfile" />
     <MESSAGE value="provide mvnw with exec permission" />
-    <option name="LAST_COMMIT_MESSAGE" value="provide mvnw with exec permission" />
+    <MESSAGE value="update Jenkinsfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Jenkinsfile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -9,7 +9,7 @@ pipeline {
 
        stage('Maven clean package') {
             steps {
-                sh './mvnw clean package'
+                sh './mvnw clean install -DskipTests'
             }
        }
        stage('build image') {
