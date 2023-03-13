@@ -1,20 +1,40 @@
 pipeline {
-    agent { docker { image 'maven:3.3.3' } }
+    agent {label 'machine-1'}
     stages {
        stage('log version info') {
          steps {
-          sh 'mvn --version'
+          sh './mvnw --version'
          }
        }
        stage('run test') {
           steps {
-            sh 'mvn test'
+            sh './mvnw test'
           }
+       }
+       stage('Maven clean package') {
+            steps {
+                sh './mvnw clean package'
+            }
        }
        stage('build image') {
           steps {
-            sh 'mvn spring-boot:build-image'
+            sh './mvnw spring-boot:build-image'
           }
+       }
+//
+//     stage('Build image') {
+//        dockerImage = docker.build("docker01120/sl-wb:latest")
+//     }
+
+       stage('Push image') {
+          withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
+            sh 'docker tag  docker.io/library/sl-wb:1.0-SNAPSHOT docker01120/sl-wb:latest'
+            sh 'docker push docker01120/sl-wb:latest'
+//         dockerImage.push()
+          }
+       }
+       stage('run container') {
+            sh 'docker run -d --name slwb_app -p 8000:8000 docker01120/sl-wb:latest'
        }
 
     }
