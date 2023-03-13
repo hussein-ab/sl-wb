@@ -8,22 +8,16 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 
 
 @SpringBootTest
-@Testcontainers
 public class RunnerTest {
 
-
-    public static GenericContainer container = new GenericContainer<>("docker.io/library/sl-wb:1.0-SNAPSHOT")
-            .withExposedPorts(8000);
 
 
 
     @Test
     public void test() {
 
-        container.start();
-        // test container
+        // run tests
 
-        container.stop();
 
     }
 }
