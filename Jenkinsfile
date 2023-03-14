@@ -36,9 +36,9 @@ pipeline {
          }
 
        }
-       stage('run container') {
+       stage('run containers') {
           steps {
-              sh 'docker run -d --name slwb_app -p 8000:8000 docker01120/sl-wb:latest'
+              sh 'docker stack deploy --compose-file docker-compose.yml sl-wb'
           }
        }
 
