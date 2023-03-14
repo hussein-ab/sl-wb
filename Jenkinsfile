@@ -38,7 +38,7 @@ pipeline {
        }
        stage('run containers') {
           steps {
-              sh 'docker stack deploy --compose-file docker-compose.yml sl-wb'
+              sh 'docker stack deploy --compose-file ./docker-compose.yaml sl-wb'
           }
        }
 
